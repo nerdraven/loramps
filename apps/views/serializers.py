@@ -6,7 +6,11 @@ class EventSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Event
-        fields = '__all__'
+        fields = [
+            'id', 'name', 'event_code', 
+            'date_created', 'estimated_size', 
+            'current_number_of_attendees', 'owner'
+        ]
 
 
 class TicketSerializer(serializers.ModelSerializer):

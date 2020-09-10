@@ -21,6 +21,11 @@ class Event(models.Model):
 
     def __str__(self):
         return f'{self.name} event code: {self.event_code}'
+    
+    @property
+    def current_number_of_attendees(self):
+        return len(self.ticket_set.only())
+
 
 class Ticket(models.Model):
     name = models.CharField(max_length=200)
