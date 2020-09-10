@@ -1,1 +1,1 @@
-web: gunicorn loramps.wsgi --logfile -
+web: gunicorn loramps.wsgi
