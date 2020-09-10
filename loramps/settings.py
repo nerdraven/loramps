@@ -10,7 +10,7 @@ SECRET_KEY = '$i1ti$invi_ys9$_c0f*o(9q$lf13^w56+&^axo)jea=!57=9m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://loramps.herokuapp.com/', '0.0.0.0']
 
 
 INSTALLED_APPS = [
@@ -114,3 +114,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
